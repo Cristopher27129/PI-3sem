@@ -1,0 +1,112 @@
+.imagemCarde{
+  height: 100px;
+}
+.carroseu {
+  width: 80%;
+  
+  margin-top: 20px;
+  overflow-y: hidden;
+  display: flex;
+  max-width: 100vw;
+  height: 150px; /* Mude para auto ou defina uma altura específica */
+  flex-wrap: wrap; /* Permite que os cartões se ajustem em várias linhas se necessário */
+}
+
+.carde {
+  display: flex;
+  width: 15vw; /* Certifique-se de que isso não cause overflow */
+}
+
+.borda {
+  background-color: white;
+  height: 150px; /* Altura definida */
+  width: 150px; /* Largura definida */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo */
+  border-radius: 100%;
+  border: rgb(160, 160, 160) solid 1px;
+  padding: 20px;
+}
+
+
+@media(max-width:992px){
+  .borda{
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  border: rgb(160, 160, 160) solid 1px;
+  padding: 20px;
+  }
+  .carde{
+    display: flex;
+    width: 20vw;
+  }
+}
+@media(max-width:800px){
+  .imagemCarde{
+    height: 80px;
+  }
+  .borda{
+  background-color: white;
+  height: 125px;
+  width: 125px;
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  border: rgb(160, 160, 160) solid 1px;
+  padding: 20px;
+  }
+  .carde{
+    display: flex;
+    width: 20vw;
+  }
+  .carroseu {
+    height: 125px;
+  }
+}
+@media(max-width:635px){
+  .imagemCarde{
+    height: 75px;
+  }
+  .borda{
+  background-color: white;
+  height: 90px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  border: rgb(160, 160, 160) solid 1px;
+  }
+  .carde{
+    display: flex;
+    width: 20vw;
+  }
+  .carroseu {
+    height: 90px;
+  }
+}
+@media(max-width:460px){
+  .imagemCarde{
+    height: 65px;
+  }
+  .borda{
+  background-color: white;
+  height: 85px;
+  width: 85px;
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  border: rgb(160, 160, 160) solid 1px;
+  }
+  .carde{
+    display: flex;
+    width: 25vw;
+  }
+  .carroseu {
+    height: 85px;
+  }
+}
